@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Fancybox CSS and jQuery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <!-- Title and metadata -->
+    <title>RECURSOS</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--Link Icono-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofVJhDJGegw1dZ+6Ls1P+Jb/myi+UC5xj" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive styles -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Font Awesome for older IEs -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <!-- HTML5 Shiv and Respond.js for IE compatibility -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Custom styles for footer icons -->
+    <style>
+        .text-reset i {
+            font-size: 24px;
+        }
+    </style>
+
+<style>
+    .social-icons {
+       position: fixed;
+       top: 50%;
+       right: 20px;
+       transform: translateY(-50%);
+       z-index: 1000;
+    }
+ 
+    .social-icons a {
+       display: block;
+       margin-bottom: 10px;
+       font-size: 24px;
+       color: #000; /* Puedes ajustar el color según tu diseño */
+    }
+ </style>
+
+<style>
+    /* Estilos para los botones */
+    .styled-button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #6ac259; /* Color verde claro */
+        border-radius: 5px;
+        transition: background-color 0.3s ease; /* Animación de cambio de color */
+    }
+
+    /* Cambiar color al pasar el ratón sobre el botón */
+    .styled-button:hover {
+        background-color: #4f964d; /* Color verde más oscuro al pasar el ratón */
+    }
+</style>
+
+     <!-- Agrega jQuery y Popper.js antes de Bootstrap.js -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+<!-- Agrega Bootstrap.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+<!-- Script para mostrar ventana emergente -->
+<script>
+   // Espera a que el documento esté listo
+   $(document).ready(function () {
+     // Manejador de clic en el enlace
+     $('[data-bs-toggle="modal"]').on('click', function () {
+       var target = $(this).data('target');
+       // Crea y muestra la ventana emergente utilizando Bootstrap
+       $(target).modal('show');
+     });
+   });
+ </script>
+ <style>
+    .submenu {
+        display: none;
+        position: absolute;
+        list-style-type: none;
+        background-color: #fff; /* Ajusta el color de fondo según tu diseño */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Agrega sombra para un aspecto más elegante */
+        z-index: 1;
+    }
+
+    .nav-item:hover .submenu {
+        display: block;
+    }
+
+    .submenu li {
+        padding: 8px;
+        border-bottom: 1px solid #ddd; /* Línea divisoria entre elementos del submenú */
+    }
+</style>
+
+ 
+</head>
+
+<body class="main-layout in_page">
+    <!-- Loader -->
+    <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    </div>
+    <!-- Header -->
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo Section -->
+                    <div class="col-md-12 col-sm-3 col logo_section">
+                        <div class="full">
+                            <div class="center-desk">
+                                <div class="logo">
+                                    <a href="./index.html" class="btn btn-light">
+                                        <img src="./icon/casa.png" alt="Icono de casita" style="width: 24px; height: 24px;">
+                                    </a>
+                                    <a href="#"><img src="images/logini.png" alt="#" width="100" /></a>
+                                    <span class="logo-text" style="font-size: 24px; font-weight: bold;">SeguriKids</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Navigation -->
+                    <div class="col-md-10 offset-md-1">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarsExample04">
+                                <ul class="navbar-nav mr-auto">
+                                    <!-- Navigation items with separators -->
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="quienes.html" style="font-weight: bold; font-size: 14px;">Quienes somos</a>
+                                        <hr>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="fases.html" style="font-weight: bold; font-size: 14px;">Fases</a>
+                                        <hr>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="casos.html" style="font-weight: bold; font-size: 14px;">Casos</a>
+                                        <hr>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="recursos.html" style="font-weight: bold; font-size: 14px;">Recursos</a>
+                                        <hr>
+                                    </li>                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="capacitaciones.html" style="font-weight: bold; font-size: 14px;">Capacitaciones</a>
+                                        <hr>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html" style="font-weight: bold; font-size: 14px;">Contactanos</a>
+                                        <hr>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+   <!-- Recursos Section -->
+<div class="container">
+    <!-- Section Title -->
+    <div class="row">
+        <div class="col-md-12 text-center mb-4">
+            <h1 style="font-weight: bold;">DESCUBRE NUESTROS RECURSOS</h1>
+        </div>
+    </div>
+    
+  
+<div style="text-align: center;">
+        <!-- Hacer la imagen más pequeña -->
+        <img src="../Imagenes/recursos_biblio.png" alt="" style="max-width: 40%; height: auto;"> <br>
+    </div> <br>
+    <center>
+        <h2>En este apartado es donde podrás encontrar recursos que te pueden ayudar en la lucha contra el bullying.</h2>
+        
+        <!-- Botones estilizados y animados -->
+        <a href="docente.html" target="_blank" class="styled-button">
+            <img src="../Imagenes/profesor.gif" alt="Icono de Docente" class="icon-gif"> Docente
+        </a>        
+        <a href="estudiantes.html" target="_blank" class="styled-button">
+            <img src="../Imagenes/biblioteca.gif" alt="Icono de Docente" class="icon-gif"> Estudiantes
+        </a>  
+        <a href="padres.php" target="_blank" class="styled-button">
+            <img src="../Imagenes/recien-nacido.gif" alt="Icono de Docente" class="icon-gif"> Padres
+        </a>  
+    </center>
+</div>    
+    <!-- Nuevos Recursos Section -->
+    <div class="container">
+        <!-- Section Title -->
+    </div>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Links y Políticas de Privacidad -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Link to Privacy Policies -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-2">
+                            <i class="fas fa-gem me-3"></i>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#politicasPrivacidadModal">Políticas de privacidad</a>
+                        </h6>
+                        <p>Consulta nuestras políticas de privacidad</p>
+                    </div>
+                    <!-- Privacy Policies Modal -->
+                    <div class="modal fade" id="politicasPrivacidadModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Políticas de Privacidad</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>1. Información Recopilada: Recopilamos información personal, como nombres y direcciones de correo electrónico, con el objetivo de proporcionar servicios relacionados con la prevención del bullying. <br><br>2. Uso de la Información: La información recopilada se utiliza para mejorar nuestros servicios, enviar boletines informativos y apoyar la causa contra el bullying. <br>3. Protección de Datos: Implementamos medidas de seguridad para proteger la información del usuario contra accesos no autorizados y mal uso.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact Information -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-2">Información de Contacto</h6>
+                        <p><i class="fas fa-home me-3"></i> Jose Palomino y Dolores Sucre</p>
+                        <p><i class="fas fa-envelope me-3"></i> segurikids.edu@outlook.com</p>
+                        <p><i class="fas fa-phone me-3"></i> +593 93 9769049</p>
+                        <p><i class="fas fa-phone me-3"></i> +593 93 9590281</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin Section: Links y Políticas de Privacidad -->
+        <!-- Section: Derechos de Autor -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2023 Derechos reservados
+        </div>
+        <!-- Fin Section: Derechos de Autor -->
+    </footer>
+    <!-- Fin Footer -->
+    <!-- Javascript files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <!-- Sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+     <!-- Redes Sociales -->
+<div class="social-icons">
+    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+ </div>
+</body>
+</html>
